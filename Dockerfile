@@ -9,7 +9,7 @@ LABEL "repository"="https://github.com/olance/isort-action"
 LABEL "homepage"="https://github.com/olance/isort-action"
 LABEL "maintainer"="Olivier Lance <olivier@techtrails.io>"
 
-RUN pip install isort
+RUN pip install isort[pyproject]
 
 COPY entrypoint.sh /entrypoint.sh
 
